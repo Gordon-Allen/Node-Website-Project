@@ -1,0 +1,31 @@
+{
+    "info":{
+        "gman_personal":{
+            "name":"Gordon 'G-Man' Allen",
+            "address":"1234 FooBar Road Chicago, IL 60614",
+            "age":"27", 
+            "profession": "Full-Stack Developer", 
+            "programming_languages": "Python, JavaScript, C#",
+            "libraries_frameworks": "Django, Flask, Express, .NET, .NET Core", 
+            "databases": "SQL, NoSQL, MySQL, MS SQL Server, MongoDB",
+            "hobbies": "DJ-ing, running/working out, reading"
+        },
+        "gman_family":{
+            "Father":{
+                "name": "Mike Allen", 
+                "age": "Classified",
+                "location": "Indianapolis, IN"
+            },
+            "Sister":{
+                "name": "Jessica Allen", 
+                "age": "28",
+                "location": "Indianapolis, IN"
+            },
+            "Stepbrother":{
+                "name": "Lance Allen", 
+                "age": "52",
+                "location": "Indianapolis, IN"
+            }
+        }
+    }
+}

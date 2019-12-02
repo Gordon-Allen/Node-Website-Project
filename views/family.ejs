@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/site.css">
+    <title>G-Man's Family Details</title>
+</head>
+<body>
+    <% include nav.ejs %>
+    <br>
+    <h1>Family Details for G-Man Allen</h1>
+    <ul>
+        <% d_cnt.forEach(function(item) { %>
+            <li><h2>Father: <em><%= item.info.gman_family.Father.name %></em></h2></li>
+            <li><h2>Sister: <em><%= item.info.gman_family.Sister.name %></em></h2></li>
+            <li><h2>Step-Brother: <em><%= item.info.gman_family.Stepbrother.name %></em></h2></li>
+        <% }); %>
+    </ul>
+    <br>
+    <h3><em>If you would like more information on a specific family member, select them from the drop-down menu and press 'Submit'</em></h3>
+    <br>
+    <form action="/family" method="post" style="margin-left:1%">
+        <select name="f_member" style="color: #0086D8;">
+            <option>Father</option>
+            <option>Sister</option>
+            <option>Stepbrother</option>
+        </select>
+        <input type="submit" value="Submit" style="color: white; background-color:#0086D8; border: 3px solid white;"">
+    </form>
+</body>
+</html>

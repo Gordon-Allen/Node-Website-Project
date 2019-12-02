@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/site.css">
+    <title>Get in Contact With G-Man</title>
+</head>
+<body>
+    <% include nav.ejs %>
+    <br>
+    <h1>IT WORKED!</h1>
+    <% if(f_member === "Father") { %>
+        <% d_cnt.forEach(function(item) { %>
+        <ul>
+            <li><h2>Name: <em><%= item.info.gman_family.Father.name %></em></h2></li>
+            <li><h2>Age: <em><%= item.info.gman_family.Father.age %></em></h2></li>
+            <li><h2>Location: <em><%= item.info.gman_family.Father.location %></em></h2></li>
+        </ul>
+    <% })}; %>
+    <% if(f_member === "Sister") { %>
+        <% d_cnt.forEach(function(item) { %>
+        <ul>
+            <li><h2>Name: <em><%= item.info.gman_family.Sister.name %></em></h2></li>
+            <li><h2>Age: <em><%= item.info.gman_family.Sister.age %></em></h2></li>
+            <li><h2>Location: <em><%= item.info.gman_family.Sister.location %></em></h2></li>
+        </ul>
+    <% })}; %>
+    <% if(f_member === "Stepbrother") { %>
+        <ul>
+        <% d_cnt.forEach(function(item) { %>
+            <li><h2>Name: <em><%= item.info.gman_family.Stepbrother.name %></em></h2></li>
+            <li><h2>Age: <em><%= item.info.gman_family.Stepbrother.age %></em></h2></li>
+            <li><h2>Location: <em><%= item.info.gman_family.Stepbrother.location %></em></h2></li>
+        </ul>
+    <% })}; %>
+    <button><a href="/family">Go Back</a></button>
+</body>
+</html>

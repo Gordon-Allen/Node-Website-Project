@@ -1,0 +1,25 @@
+{
+  "name": "Routing_Example_Website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6-alpha.6",
+    "express-session": "^1.17.0",
+    "http-errors": "^1.7.3",
+    "mongoose": "^5.7.7",
+    "mysql": "^2.17.1",
+    "request": "^2.88.0"
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/site.css">
+    <title>Get in Contact With G-Man</title>
+</head>
+<body>
+    <% include nav.ejs %>
+    <br>
+    <h1>Contact Form</h1>
+    <form action="/form" method="post" style="color: white; margin-left: 2%;" enctype="multipart/form-data"> 
+        <label>First Name:</label>
+        <br>
+        <input type="text" name="first_name" required/>
+        <br>
+        <label>Last Name:</label>
+        <br>
+        <input type="text" name="last_name" required/>
+        <br>
+        <label>Email:</label>
+        <br>
+        <input type="email" name="email" required/>
+        <br>
+        <label>Comment:</label>
+        <br>
+        <textarea name="comment" required></textarea> 
+        <br>
+        <label>Image Upload (Not Required):</label>
+        <br>
+        <input type="file" name="f_upload" value="Upload Img Here" />
+        <br>
+        <input type="submit" value="Submit Your Info" style="color: white; background-color: #0086D8; border: 3px solid white;"/> 
+    </form>
+</body>
+</html>
